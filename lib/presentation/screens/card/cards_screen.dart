@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+
+
 class CardsScreen extends StatelessWidget {
 
   static const String name = 'cards_screen';
@@ -12,7 +14,16 @@ class CardsScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Cards Screens"),
       ),
-      body: const Placeholder(),
+      body: _CardView(),
     );
+  }
+}
+
+class _CardView extends StatelessWidget {
+  const _CardView();
+
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
   }
 }
