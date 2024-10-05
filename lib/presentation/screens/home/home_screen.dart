@@ -3,7 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:widget_app/config/menu/menu_items.dart';
 import 'package:widget_app/config/router/app_router.dart';
 import 'package:widget_app/presentation/screens/buttons/buttons_screen.dart';
-import 'package:widget_app/presentation/screens/card/cards_screen.dart';
+import 'package:widget_app/presentation/screens/cards/cards_screen.dart';
 
 class HomeScreen extends StatelessWidget {
 
