@@ -48,12 +48,20 @@ const appMenuItems = <MenuItems>[
     icon: Icons.info_outline
   ),
 
-    MenuItems(
+  MenuItems(
     title: 'Animated Container',
     subTitle: 'Statefull widget animado',
     link: '/animated',
-    icon: Icons.info_outline
-  )
+    icon: Icons.animation_outlined
+  ),
+  
+   MenuItems(
+    title: 'UI Controls + Tiles',
+    subTitle: 'Una serie de controles de Flutter',
+    link: '/ui-controls',
+    icon: Icons.car_rental_outlined
+  ),
+  
   
   
   
