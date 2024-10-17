@@ -46,6 +46,7 @@ const appMenuItems = <MenuItems>[
     subTitle: 'Indicandores en pantalla',
     link: '/snackbars',
     icon: Icons.info_outline
+
   ),
 
   MenuItems(
@@ -63,6 +64,9 @@ const appMenuItems = <MenuItems>[
   ),
   
   
+
+  )
+
   
   
 ];
