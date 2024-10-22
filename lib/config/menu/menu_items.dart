@@ -70,6 +70,12 @@ const appMenuItems = <MenuItems>[
     icon: Icons.accessible_rounded
   ),
   
+   MenuItems(
+    title: 'Introducción al Inifinite Scroll',
+    subTitle: 'Scrol infinito',
+    link: '/infinite',
+    icon: Icons.list_alt_outlined
+  ),
   
   
 
