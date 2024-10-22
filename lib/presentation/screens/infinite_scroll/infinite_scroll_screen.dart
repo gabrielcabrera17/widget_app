@@ -14,6 +14,8 @@ class InfiniteScrollScreen extends StatefulWidget {
 class _InfiniteScrollScreenState extends State<InfiniteScrollScreen> {
   //
   bool isLoading = false;
+  //revisando si esta montado
+  bool isMounted = true;
   
 
   List<int> imageIds = [1,2,3,4,5];
@@ -38,6 +40,7 @@ class _InfiniteScrollScreenState extends State<InfiniteScrollScreen> {
   @override
   void dispose() {
     scrollController.dispose();
+    isMounted = false;
     super.dispose();
   }
 
@@ -56,6 +59,7 @@ class _InfiniteScrollScreenState extends State<InfiniteScrollScreen> {
     addFiveImages();
     isLoading = false;
     
+    if(!isMounted) return;
     //TODO revisar si está montado el componente /widget
     setState(() {
       
