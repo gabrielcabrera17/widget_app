@@ -61,8 +61,9 @@ class _InfiniteScrollScreenState extends State<InfiniteScrollScreen> {
     isLoading = false;
     
     if(!isMounted) return;
-    //TODO revisar si está montado el componente /widget
+  
     setState(() {});
+    moveScrollBottom();
 
   } 
 
@@ -81,8 +82,22 @@ class _InfiniteScrollScreenState extends State<InfiniteScrollScreen> {
     addFiveImages();
 
     setState(() {});
+   
 
 
+  }
+
+  void moveScrollBottom(){
+    if(scrollController.position.pixels + 150 <= scrollController.position.maxScrollExtent) return ;
+
+    scrollController.animateTo(
+      //posición actual + 120
+      //0, sube hasta arriba
+      scrollController.position.pixels + 120, 
+      duration: const Duration(milliseconds: 300), 
+      curve: Curves.fastOutSlowIn
+    );
+  
   }
 
   void addFiveImages (){
