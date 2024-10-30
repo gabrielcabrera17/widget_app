@@ -16,6 +16,14 @@ class MenuItems {
 }
 
 const appMenuItems = <MenuItems>[
+
+   MenuItems(
+    title: 'Contador ',
+    subTitle: 'Counter Riverpod',
+    link: '/counter_screen',
+    icon: Icons.countertops_outlined
+  ),
+  
   
   MenuItems(
     title: 'Botones',
@@ -76,6 +84,8 @@ const appMenuItems = <MenuItems>[
     link: '/infinite',
     icon: Icons.list_alt_outlined
   ),
+
+   
   
   
 
