@@ -19,13 +19,15 @@ class MainApp extends ConsumerWidget {
   @override
   Widget build(BuildContext context, ref) {
 
-    final isDarkMode = ref.watch(isDarModeProvider);
-    final colorSelected = ref.watch(selectedColorProvider);
+    //final isDarkMode = ref.watch(isDarModeProvider);
+    //final colorSelected = ref.watch(selectedColorProvider);
+
+    final AppTheme appTheme = ref.watch(themeNotifierProvider);
     return MaterialApp.router(
       title: 'Sigo App',
       routerConfig: appRouter,
       debugShowCheckedModeBanner: false,
-      theme: AppTheme(selectedColor: colorSelected, isDarkMode: isDarkMode).getTheme(),
+      theme: appTheme.getTheme()
       
     );
   }
