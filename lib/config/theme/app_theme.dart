@@ -33,5 +33,12 @@ class AppTheme {
     )
   );
 
-  
+  AppTheme copyWith({
+    int? selectedColor,
+    bool? isDarkMode
+}) => AppTheme(
+    //sino me manda el valor usare el valor por defecto
+    selectedColor:  selectedColor ?? this.selectedColor,
+    isDarkMode:  isDarkMode ?? this.isDarkMode
+  );
 }
